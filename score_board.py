@@ -15,12 +15,17 @@ class ScoreBoard(Turtle):
         self.hideturtle()
         self.penup()
         self.goto(score_position)
-        self.display_score()
+        self.reset_score()
 
     def display_score(self):
         self.write(f"{self.score}", align="center", font=FONT)
 
     def add_score(self):
         self.score += 1
+        self.clear()
+        self.display_score()
+
+    def reset_score(self):
+        self.score = 0
         self.clear()
         self.display_score()
