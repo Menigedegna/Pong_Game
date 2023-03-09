@@ -1,7 +1,7 @@
 from turtle import Turtle
 from random import randint, choice
-BALL_COLOR = "white"
-BALL_DIAMETER = 6
+BALL_COLOR = (255, 215, 0)
+BALL_DIAMETER = 10
 MOVE_DISTANCE = 10
 
 
@@ -16,8 +16,8 @@ class Ball(Turtle):
         self.x_min = x_min
         self.margin = margin
         self.shape("circle")
-        self.shapesize(BALL_DIAMETER/20, BALL_DIAMETER/20)
-        self.color(BALL_COLOR)
+        self.shapesize(stretch_wid=BALL_DIAMETER/20, stretch_len=BALL_DIAMETER/20, outline=5)
+        self.color(BALL_COLOR, "white")
         self.reset_ball()
 
     def reset_ball(self):

@@ -14,9 +14,9 @@ WINDOW_TITLE = "Pong Game"
 MARGIN = 30
 
 # variables of dash line
-DASH_LINE_WIDTH = 8
+DASH_LINE_WIDTH = 3
 DASH_LINE_HEIGHT = 10
-DASH_COLOR = "white"
+DASH_COLOR = (227, 207, 87)
 
 # game variables
 DELAY = 0.06
@@ -27,7 +27,7 @@ PADDLE_HEIGHT = 60
 
 # variables for game status display
 STATUS_BG_COLOR = "black"
-STATUS_TXT_COLOR = "white"
+STATUS_TXT_COLOR = (0, 128, 128)
 STATUS_FONT = ("Times New Roman", 15, "normal")
 STATUS_ALERT_WIDTH = 100
 STATUS_ALERT_HEIGHT = 100
@@ -44,6 +44,7 @@ class Game:
         self.y_max = -1 * self.y_min
         self.x_min = -1 * round(SCREEN_WIDTH / 2) + MARGIN
         self.x_max = -1 * self.x_min
+        self.screen.colormode(255)
 
         '''DRAW DASH LINE AT CENTER OF SCREEN'''
         draw_dash_line()
