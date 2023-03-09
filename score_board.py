@@ -1,8 +1,8 @@
 from turtle import Turtle
 
-SCORE_COLOR = "white"
+SCORE_COLOR = (255, 64, 64)
 FONT = ("Times New Roman", 15, "normal")
-GAME_ALERT = "white"
+GAME_ALERT = (255,64,64)
 
 
 class ScoreBoard(Turtle):

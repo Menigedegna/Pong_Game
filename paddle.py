@@ -1,7 +1,7 @@
 from turtle import Turtle
 
 MOVE_DISTANCE = 20
-PAD_COLOR = "white"
+PAD_COLOR = (0, 255, 127)
 PAD_WIDTH = 10
 
 
