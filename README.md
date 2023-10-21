@@ -7,7 +7,7 @@
         <td>
             <p> 
                 Pong Game using python's turtle module.
-                <br>After you can the main.py file ...
+                <br>Few instructions ...
             </p>
             <ul>
                 <li>To start or restart the game press **space** keypad</li>
